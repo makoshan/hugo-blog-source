@@ -9,6 +9,8 @@ hugo
 # Go To Public folder
 cd /Users/ghui/.hugo_blog
 # Add changes to git.
+git co .
+git clean -df
 git add -A
 
 # Commit changes.
