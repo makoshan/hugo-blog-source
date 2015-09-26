@@ -1,7 +1,6 @@
 #!/bin/bash
-
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-
+cd ~/ghui.me
 # Build the project.
 # if using a theme, replace by `hugo -t <yourtheme>`
 hugo
@@ -20,8 +19,13 @@ if [ $# -eq 1 ]
 	  fi
 	  git commit -m "$msg"
 
-	  # Push source and build repos.
+	  # Push output to server
 	  git push origin master
 
 	  # Come Back
 	  cd ~/ghui.me
+          echo -e "\033[0;32mDeploying source to GitHub...\033[0m"
+	  git add -A
+	  git commit -m "$msg"
+	  git push origin master
+
