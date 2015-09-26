@@ -3,3 +3,8 @@ languageCode = "en-us"
 title = "ByGhui"
 theme = "slim"
 publishdir = "/Users/ghui/.hugo_blog"
+[params]
+  author = "ghui"
+  Subtitle = "sharing,improving"
+  Summary = false
+  Content = false
