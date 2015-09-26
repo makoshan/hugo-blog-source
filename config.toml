@@ -1,0 +1,5 @@
+baseurl = "http://ghui.me/"
+languageCode = "en-us"
+title = "ByGhui"
+theme = "slim"
+publishdir = "/Users/ghui/.hugo_blog"
