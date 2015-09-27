@@ -5,7 +5,7 @@ date = "2015-03-10T19:01:21+08:00"
 Android tools团队于去年底最终发布了Android Studio1.0正式版及gradle plugin for android 1.0正式版，然后业余时间就研究了一下Gradle,前段时间也在公司内部做了一个相关分享，感觉gradle带来的最大便利就是通过
 *Product Flavor*实现在一个工程中开发不同特性的apk，以及更方便的依赖管理，下面通过一个小demo来演示这些:<!--more-->   
 这个demo对应两个版本免费版及收费版。主要区别在于免费版中使用的是普通的loading圈，收费版中使用的是google风格的progressbar,最终效果如下:   
-![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-free.gif-nor)    ![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-pay.gif-nor)    
+![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-free.gif)  ![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-pay.gif)    
 
 仔细观察上面的视频，你会发现这两个应用除了progressbar的样式不一样之外，它们对应的app-name,app-icon也不同，而且我将它们同时安装到了一台设备上，这就说明它们的包名也不一样。而这些差异我可以通过ProductFlavor及Source sets轻松实现。  
 
@@ -62,10 +62,10 @@ dependencies {
 我对pay flavor中的包名做了修改，free中没有做单独设置它会使用defaultconfig中定义的包名，这就解释了为什么我可以同时将这两个apk装到手机上。  
 那么如何实现pay , free 对应不同的特性呢，这里要引入另外一个概念—— "SourceSets"可以到[这里](http://tools.android.com/tech-docs/new-build-system/build-system-concepts)了解，每个flavor都可以对应一个Sourceset,你可以在与`src/main`同级的目录下新建另外两个目录pay,free这里面可以放各自特性相关的代码，然后这些代码会与main下面的代码按照一定的规则进行合并，最终组成当前variant对应的完整代码。main,pay,free就是3个Sourceset 如下图:
 
-![](/images/posts/gradledemo-stru.jpg)
+![](http://77g5pl.com1.z0.glb.clouddn.com/imggradledemo-stru.jpg-nor)
 
 你最终能编译出的apk的数量是由productflavor与BuildType决定的，虽然我这里没有定义Buildtype但gradle默认提供了两种buildType —— `debug`,`release`，所以，一共可以编译出4种apk,你可以到Android Studio 的BuildVariants面板中查看如下图:  
-![](/images/posts/gradle-demo-3.png)  
+![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-3.png)  
 实际上在你上图中的面板中切换variant时，Android视图下对应的代码是会发生变化的，这里显示出的代码就是你当前variant所拣取的代码，可以看到这里我选择编译`paydebug`上面的代码就由main+pay下面的代码组成了
 
 在pay下面的ImgViewer中我使用了googleprogressbar而在free下的ImgViewer中我使用了普通的Progressbar,代码如下：  
