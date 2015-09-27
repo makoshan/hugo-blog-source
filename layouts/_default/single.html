@@ -14,8 +14,11 @@
         <div class="post-content">
           {{ .Content }}
         </div>
+          {{ partial "duoshuo.html" . }}
       </div>
     </div>
+
+
     {{ partial "footer.html" . }}
   </div>
   <script src="{{ .Site.BaseURL }}/js/slim.js"></script>

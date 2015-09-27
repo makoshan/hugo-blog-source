@@ -6,3 +6,4 @@ publishdir = "/Users/ghui/.hugo_blog"
   Subtitle = "sharing,improving"
   Summary = false
   Content = false
+  duoshuoShortname = "ghui"
