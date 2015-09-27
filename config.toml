@@ -1,4 +1,4 @@
-baseurl = "http://ghuiii.github.io/"
+baseurl = "http://ghui.me/"
 title = "ByGhui"
 publishdir = "/Users/ghui/.hugo_blog"
 [params]
