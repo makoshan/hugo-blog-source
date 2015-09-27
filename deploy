@@ -3,8 +3,6 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 cd ~/ghui.me
 # Go To Public folder
 cd /Users/ghui/.hugo_blog
-git co .
-git clean -df
 # Build the project.
 hugo
 # Add changes to git.

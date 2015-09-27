@@ -1,5 +1,5 @@
-baseurl = "http://ghuiii.github.io/"
-languageCode = "en-us"
+baseurl = "http://ghui.me/"
+languageCode = "zh-CN"
 title = "ByGhui"
 publishdir = "/Users/ghui/.hugo_blog"
 [params]
