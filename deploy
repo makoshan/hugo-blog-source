@@ -1,17 +1,14 @@
 #!/bin/bash
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 cd ~/ghui.me
-# Build the project.
-# if using a theme, replace by `hugo -t <yourtheme>`
-hugo
-
 # Go To Public folder
 cd /Users/ghui/.hugo_blog
-# Add changes to git.
 git co .
 git clean -df
+# Build the project.
+hugo
+# Add changes to git.
 git add -A
-
 # Commit changes.
 msg="rebuilding site `date`"
 if [ $# -eq 1 ]
