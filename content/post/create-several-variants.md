@@ -5,7 +5,7 @@ date = "2015-03-10T19:01:21+08:00"
 Android tools团队于去年底最终发布了Android Studio1.0正式版及gradle plugin for android 1.0正式版，然后业余时间就研究了一下Gradle,前段时间也在公司内部做了一个相关分享，感觉gradle带来的最大便利就是通过
 *Product Flavor*实现在一个工程中开发不同特性的apk，以及更方便的依赖管理，下面通过一个小demo来演示这些:<!--more-->   
 这个demo对应两个版本免费版及收费版。主要区别在于免费版中使用的是普通的loading圈，收费版中使用的是google风格的progressbar,最终效果如下:   
-![](/images/posts/gradle-demo-free.gif)    ![](/images/posts/gradle-demo-pay.gif)    
+![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-free.gif-nor)    ![](http://77g5pl.com1.z0.glb.clouddn.com/imggradle-demo-pay.gif-nor)    
 
 仔细观察上面的视频，你会发现这两个应用除了progressbar的样式不一样之外，它们对应的app-name,app-icon也不同，而且我将它们同时安装到了一台设备上，这就说明它们的包名也不一样。而这些差异我可以通过ProductFlavor及Source sets轻松实现。  
 
