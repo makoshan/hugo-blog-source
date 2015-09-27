@@ -9,7 +9,7 @@ date = "2013-11-13T19:01:21+08:00"
 2. 不是一个线程 
 ##3. service ,thread,进程
 它们三者之间的关系可以简单用下图来表示:
-![](/images/posts/process.png)
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgprocess.png)
 1. 默认的Service运行在当前应用的进程中,除非你在`AndroidMannifest.xml`中配置其运行在单独的进程
 2. Service中的代码默认情况下是在主线程(UI线程)中执行的,因此如果你想要在Service中执行耗时操作,需要另外开启一个线程
 
@@ -26,14 +26,14 @@ service有两种启动方式:
 1. 通过startService方法
 2. 通过bindService方法
 这两种启动方式下的生命周期如下图所示:    
-![](/images/posts/service_lifecycle.png)  
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgservice_lifecycle.png)  
 很简单是不,比起Activity来说service的生命周期是简单不少,上面两种方式下的生命周期很简单不在今天的讨论范围内,想这样一个问题,假如,一个service先通过`startServi
 ce`方法开启,再通过`bindService`开启;或者先通过`bindService`,再通过`startService`.这两种情况下service的生命周期是怎么样呢?  
 
 经过我的测试得出的答案如下:
 
 1. 同一个service只会被创建一次(onCreate方法只执行一次)；假如你先通过`startService`(或bindService)方法开启了一个Service,然后你再通过`bindService`(或startService)方法去开启同一个(Intent中指定的action相同)Service 那么此时,将不会再执行onCreate方法而会直接执行`onBind`方法,这种情况下的生命周期流程大致如下:  
-![](/images/posts/service1.png)
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgservice1.png)
 2. 同时使用`startService`与`bindService`方法开启同一个Service(如step1中的情况),这种service仅仅通过`stopService`或`unbindService`是不能关闭的,要同时使用两者
 仅仅使用`stopService`方法不会导致任何方法被回调,仅仅使用`unbindService`方法仅会导致`onUnBind`方法被回调而不会导致`onDestroy`方法被回调.
 3. 多次执行`startService`方法会导致`onStartCommand`方法的多次回调;多次执行`bindService`方法onBind方法只会被回调一次

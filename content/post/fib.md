@@ -12,7 +12,7 @@ public static long fib(int n){
 }
 ```
 通过递归来做，这是很自然就会想到的解决方案。但是递归存在一个问题效率很低。比如用上面的算法计算fib(10),计算过程如下:  
-![](/images/posts/fibonacci.png)
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgfibonacci.png)
 
 可以看到有很多重复的部分，而且随着n值的增加这种重复计算会承指数级增加，最后导致的时间开销是惊人的，你可以尝试用这种方法计算一下`fib(100)`.
 
