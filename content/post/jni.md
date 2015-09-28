@@ -1,7 +1,9 @@
-+++
-title = "JNI总结"
-date = "2013-10-06T19:01:21+08:00"
-+++
+---
+title: "JNI总结"
+date: "2013-10-06T19:01:21+08:00"
+tags:
+- java
+---
 简介
 ---
 JNI全称` Java Native Interface `,中文译为` Java本地编程接口 `. JNI 是Java平台的一大特性，它为编写Java程序提供极大的便利。

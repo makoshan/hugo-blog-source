@@ -1,7 +1,9 @@
-+++
-title = "Practical Vim读书笔记3"
-date = "2013-09-29T19:01:21+08:00"
-+++
+---
+title: "Practical Vim读书笔记3"
+date: "2013-09-29T19:01:21+08:00"
+tags:
+- vim
+---
 
 Tips11: Insert Normal Mode
 ---

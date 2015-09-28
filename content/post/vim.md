@@ -1,7 +1,9 @@
-+++
-title = "VIM 快速入门"
-date = "2013-08-23T19:01:21+08:00"
-+++
+---
+title: "VIM 快速入门"
+date: "2013-08-23T19:01:21+08:00"
+tags:
+- vim
+---
 ##1.VIM 是什么？
 vim由unix系统中的vi编辑器扩充增强而来，且vim几乎完全兼容vi。vim可以运行在linux,mac,windows系统中。但在linux及mac系统中使用较多。利用vim可以编辑各种文档，借助于vim丰富的插件，vim可以扩展出许多功能，甚至是<!-- more -->各种语言的IDE等等
 ##2.为什么要用VIM 

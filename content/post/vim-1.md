@@ -1,7 +1,9 @@
-+++
-title = "Practical Vim读书笔记1"
-date = "2013-09-17T19:01:21+08:00"
-+++
+---
+title: "Practical Vim读书笔记1"
+date: "2013-09-17T19:01:21+08:00"
+tags:
+- vim
+---
 
 发现一本好书[Practical Vim](http://pragprog.com/book/dnvim/practical-vim).以后就在这里写个读书笔记。每
 篇大概总结一章，一共大概要写20篇，欢迎捧场。
