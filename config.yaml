@@ -2,7 +2,7 @@ baseurl: "http://ghui.me/"
 title: "ByGhui"        
 publishdir: "/Users/ghui/.hugo_blog"        
 permalinks:
-        post: /:year/:month/:title/
+        post: /:year/:month/:slug/
 params:
         author: "ghui"
         Subtitle: "sharing,improving"        
