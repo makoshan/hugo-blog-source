@@ -1,6 +1,8 @@
 baseurl: "http://ghui.me/"
 title: "ByGhui"        
 publishdir: "/User/ghui/.hugo_blog"        
+permalinks:
+        post: /:year/:month/:title/
 params:
         author: "ghui"
         Subtitle: "sharing,improving"        
