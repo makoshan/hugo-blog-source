@@ -1,4 +1,11 @@
 +++
-Description = ""
-Categories = ["Android"]
+title: ""
+Description: ""
+categories:
+ - Dev
+ - Reading
+ - Thinking
+ keywords:
+ - xxx
+url: ""
 +++
