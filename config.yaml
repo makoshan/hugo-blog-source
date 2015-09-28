@@ -3,18 +3,6 @@ title: "ByGhui"
 publishdir: "/Users/ghui/.hugo_blog"        
 watch: true
 metaDataFormat: "yaml"
-menu:
-	main:
-      - Name: "归档"
-        Pre: "<i class='fa fa-heart'></i>"
-        Weight: -110
-        Identifier: "post"
-        URL: "/post/"
-      - Name: "关于我"
-        Pre: "<i class='fa fa-road'></i>"
-        Identifier: "about"
-        Weight: -100
-        URL: "/about/"
 Taxonomies:
   tag: "tags"
   category: "categories"
