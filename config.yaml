@@ -10,6 +10,4 @@ permalinks:
     post: post/:year/:month/:slug/
 params:
     author: "ghui"
-    Subtitle: "sharing,improving"    
-blackfriday:
-	fractions: true
+    Subtitle: "sharing,improving"
