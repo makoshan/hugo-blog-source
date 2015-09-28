@@ -7,7 +7,7 @@ Taxonomies:
   tag: "tags"
   category: "categories"
 permalinks:
-    post: post/:year/:month/:slug/
+    post: post/:year/:month/:filename/
 params:
     author: "ghui"
     Subtitle: "sharing,improving"
