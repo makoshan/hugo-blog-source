@@ -10,10 +10,6 @@ permalinks:
     post: post/:year/:month/:slug/
 params:
     author: "ghui"
-    Subtitle: "sharing,improving" 
-    Categories:
-    - "读书笔记"
-    - "技术文章"
-    - "思考感悟"       
+    Subtitle: "sharing,improving"    
 blackfriday:
 	fractions: true
