@@ -1,9 +1,0 @@
-baseurl = "http://ghui.me/"
-title = "ByGhui"
-publishdir = "/Users/ghui/.hugo_blog"
-[params]
-  author = "ghui"
-  Subtitle = "sharing,improving"
-  Summary = false
-  Content = false
-  duoshuoShortname = "ghui"

@@ -1,0 +1,6 @@
+baseurl: "http://ghui.me/"
+title: "ByGhui"        
+publishdir: "/User/ghui/.hugo_blog"        
+params:
+        author: "ghui"
+        Subtitle: "sharing,improving"        
