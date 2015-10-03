@@ -1,6 +1,8 @@
 ---
 title: "Fibonacci"
 date: "2014-06-20T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - 算法
 ---

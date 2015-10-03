@@ -1,6 +1,8 @@
 ---
 title: "Practical Vim读书笔记1"
 date: "2013-09-17T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - vim
 ---

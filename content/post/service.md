@@ -1,6 +1,8 @@
 ---
 title: "service总结"
 date: "2013-11-13T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - android
 ---

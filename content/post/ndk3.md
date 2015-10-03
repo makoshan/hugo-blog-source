@@ -1,6 +1,8 @@
 ---
 title: "ndk学习笔记3"
 date: "2013-10-03T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - android
 ---

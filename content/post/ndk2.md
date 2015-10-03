@@ -1,6 +1,8 @@
 ---
 title: "ndk学习笔记2"
 date: "2013-10-02T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - android
 ---

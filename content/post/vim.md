@@ -1,6 +1,8 @@
 ---
 title: "VIM 快速入门"
 date: "2013-08-23T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - vim
 ---
