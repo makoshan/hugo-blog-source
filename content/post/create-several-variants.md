@@ -17,7 +17,7 @@ Android tools团队于去年底最终发布了Android Studio1.0正式版及gradl
 首先，介绍一下*Productflavor*,它是gradle plugin for android中的一个dsl type通过它你可以定义不同的app 变种，这里定义了两种 free 及 pay 。通过Productflavor你可以配置此flavor对应的包名，签名信息，版本名，
 版本号等，具体可配置项可以到[这里](http://apdr.qiniudn.com/com.android.build.gradle.internal.dsl.ProductFlavor.html)查看,如果你对Productflavor不了解可以到[这里](http://tools.android.com/tech-docs/new-build-system/build-system-concepts)查看.下面是我的完整的build.gradle 文件:
 
-```
+```gradle
 apply plugin: 'com.android.application'
 
 android {

@@ -30,7 +30,7 @@ Tips12: insert mode下的paste操作
 	Read Drew Neil's 
 补全上面第二句，显然书名`Practical Vim`已经出现过了，我们可以直接`yank`.具体请看下图：
 
-![vim-paste](/images/posts/vim3-paste.png)
+![vim-paste](http://77g5pl.com1.z0.glb.clouddn.com/imgvim3-paste.png)
 
 其中`t`命令与`f`命令相似，只不过`t`会将光标定位到所搜索字符的前面
 Tips13: 更加强大的计算
@@ -39,7 +39,7 @@ Tips13: 更加强大的计算
 	6 chairs, each costing $35, totals $
 请计算出总和，并插入到最后。
 
-![vim-caculator](/images/posts/vim3-caculator.png)
+![vim-caculator](http://77g5pl.com1.z0.glb.clouddn.com/imgvim3-caculator.png)
 
 note:`<CR>`即是`<Enter>`
 Tips14: 插入特殊符号

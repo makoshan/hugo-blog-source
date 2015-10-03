@@ -164,7 +164,7 @@ tags:
 中的`cla`代表是:`NativeInterface`类。  
 所以，最后我们通过CallXXXMethod方法回调Java中的方法时要注意，当前传递的obj或class对象是否正确。
 
-![](/images/posts/ndk3-javap.png)  
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgndk3-javap.png)  
 最后在Activity中调用这两个native方法：  
 
     public void addInJava(View view) {
@@ -176,7 +176,7 @@ tags:
     }
 
 执行结果如下:  
-![](/images/posts/ndk3-result.png)  
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgndk3-result.png)  
 程序效果图:  
-![](/images/posts/ndk3-run.png)
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgndk3-run.png)
 

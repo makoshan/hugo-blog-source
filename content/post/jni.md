@@ -12,7 +12,7 @@ JNI全称` Java Native Interface `,中文译为` Java本地编程接口 `. JNI �
 它提供了Java程序与用`Native Code`编写的程序进行交互的能力，使它们可以相互调用。JNI 允许程序员在享受Java平台的优势的前提下
 而又能够不必放弃之前遗留下来的`Native Code`编写的程序。  <!--more-->
 在用到JNI技术的程序中，JNI所处的位置如下图所示:  
-![](/images/posts/jni1-role.png)  
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgjni1-role.png)  
 从上图中我们可以清楚的看到JNI是Java与Native沟通的通道。我们还可以看到Java虚拟机实现与Native 程序是依赖于具体的主机
 环境的,我们知道Java是跨平台的,所谓`compile once run everywhere`。Java的跨平台性是依赖于具体的虚拟机实现的，即Java虚拟机是不
 具有跨平台性的,Java 程序(.java)编译后生成的不是可执行的文件而是 `.class`字节码,`.class`可以运行的任何主机环境下的Java虚拟机
@@ -85,5 +85,5 @@ F.运行程序
 
 这条命令是设置library库的地址为` . `即当前路径下    
 下图完整的描述了上面整个进程:  
-![](/images/posts/jni1-hello.png)  
+![](http://77g5pl.com1.z0.glb.clouddn.com/imgjni1-hello.png)  
 (本文参考`the Java Native Interface Programmer’s Guide and Specification`)  
