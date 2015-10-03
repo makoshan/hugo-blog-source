@@ -3,11 +3,28 @@ title: "ByGhui"
 publishdir: "/Users/ghui/.hugo_blog"        
 watch: true
 metaDataFormat: "yaml"
+permalinks:
+    post: post/:year/:month/:filename
 Taxonomies:
   tag: "tags"
   category: "categories"
-permalinks:
-    post: post/:year/:month/:filename/
 params:
-    author: "ghui"
-    Subtitle: "sharing,improving"
+  author: "ghui"
+  Subtitle: "sharing,improving"
+menu:
+  main:
+      - Name: "Dev"
+        Pre: "<i class='fa fa-heart'></i>"
+        Weight: -110
+        Identifier: "dev"
+        URL: "/categories/dev"
+      - Name: "Feeling"
+        Pre: "<i class='fa fa-road'></i>"
+        Weight: -100
+        Identifier: "FeelingWu"
+        URL: "/categories/feeling"
+      - Name: "Others"
+        Pre: "<i class='fa fa-road'></i>"
+        Weight: -100
+        Identifier: "others"
+        URL: "/categories/others"
