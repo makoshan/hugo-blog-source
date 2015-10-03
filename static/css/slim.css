@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 *,
 *:before,
@@ -110,8 +111,8 @@ pre {
   background-color: #f9f9f9; }
 
 pre code {
-  font-family: Menlo, Monaco, Courier, monospace;
-  font-size: 0.8rem;
+  font-family:  'Monaco',Serif;
+  font-size: 0.6rem;
   padding: 0;
   color: inherit;
   background-color: transparent;
