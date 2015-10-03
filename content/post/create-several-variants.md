@@ -1,8 +1,11 @@
 ---
 title: "如何通过Gradle实现一套代码开发不同特性的APK"
 date: "2015-03-10T19:01:21+08:00"
+categories:
+- Dev
 tags:
 - android
+
 ---
 Android tools团队于去年底最终发布了Android Studio1.0正式版及gradle plugin for android 1.0正式版，然后业余时间就研究了一下Gradle,前段时间也在公司内部做了一个相关分享，感觉gradle带来的最大便利就是通过
 *Product Flavor*实现在一个工程中开发不同特性的apk，以及更方便的依赖管理，下面通过一个小demo来演示这些:<!--more-->   
