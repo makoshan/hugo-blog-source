@@ -5,7 +5,6 @@ date: 2015-10-05T01:32:40+08:00
 tags:
 - android
 title: View的MeasureSpec确定过程
-draft: true
 ---
 我们在自定义View时通常会去重写View的`onMeasure`方法，此方法提供的有一个默认实现：
 
