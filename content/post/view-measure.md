@@ -92,6 +92,7 @@ widthMeasureSpec 与 heightMeasureSpec是一个int型的变量，java中int型�
 2. static int adjust(int measureSpec, int delta) 此方法是用来对measurespec中的size进行调整的 和 `<inset>`相关。
 3. public static String toString(int measureSpec) 此方法大概是用来方便开发者从一个int值中打印mode与size，方便调试。
 
+### 过程分析
 MeasureSpec大概就是这样，为了说明MeasureSpec的创建过程，我们写一个CustomLinearLayout里面套一个CustomView,通过debug来分析一下，布局代码大致如下:
 
 ```xml
