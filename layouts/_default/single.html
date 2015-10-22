@@ -14,7 +14,8 @@
         <div class="post-content">
           {{ .Content }}
         </div>
-          {{ partial "disqus.html" . }}
+          <!-- {{ partial "disqus.html" . }} -->
+{{ template "_internal/disqus.html" . }}
       </div>
     </div>
 
