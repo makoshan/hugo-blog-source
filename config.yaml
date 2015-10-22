@@ -3,7 +3,7 @@ title: "ByGhui"
 publishdir: "/Users/ghui/.hugo_blog"        
 watch: true
 metaDataFormat: "yaml"
-disqusShortname:  "ghui.disqus.com"
+disqusShortname:  "ghui"
 permalinks:
     post: post/:year/:month/:filename
 Taxonomies:
