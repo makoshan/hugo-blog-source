@@ -1,5 +1,5 @@
 baseurl: "http://ghui.me"
-title: "ghui's blog"        
+title: "ghui's Blog"        
 publishdir: "/Users/ghui/.hugo_blog"        
 watch: true
 metaDataFormat: "yaml"
