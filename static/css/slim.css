@@ -184,6 +184,8 @@ button,
   position: absolute;
   top: 0;
   left: -70px;
+  left: -15px;
+  transform: translateX(-100%);
   text-align: right; }
 
 .nav-btn {
